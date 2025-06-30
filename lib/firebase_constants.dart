@@ -315,3 +315,11 @@ class FDBnaming {
   static const keyUpdatedAt = 'updated_at';
 
 }
+
+/// Firebase Config関連の定数管理クラス
+/// アプリの設定フラグやメンテナンス状態を管理
+class FCnaming {
+  static const keyPostAvailable = 'isPost_Available'; // 投稿可能か
+  static const keySearchAvailable = 'isSearch_Available'; // 検索可能か
+  static const keyAppInMaintenance = 'isApp_InMaintenance'; // アプリがメンテナンス中か
+}
