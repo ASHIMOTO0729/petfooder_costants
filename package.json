@@ -1,0 +1,13 @@
+{
+  "name": "shared_constants",
+  "version": "1.0.0",
+  "description": "Shared constants for petfood projects",
+  "main": "js/firebase_constants.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/shared_constants_package.git"
+  },
+  "keywords": ["firebase", "constants", "petfood", "shared"],
+  "author": "",
+  "license": "MIT"
+}
