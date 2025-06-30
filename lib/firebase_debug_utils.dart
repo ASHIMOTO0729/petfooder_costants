@@ -11,37 +11,69 @@ void debugPrintWidget(dynamic text) {
 }
 
 /// Firebase Analyticsイベントの定義
+/// petfooder/petfood_development間で共有される完全なAnalyticsEvent定義
 enum AnalyticsEvent {
-  // Firebase Database関連
+  // レビュー (Review)
+  reviewSave,
+  reviewUpdate,
+  reviewDelete,
+  reviewLike,
+
+  // ポスト (Post)  
+  postSave,
+  postUpdate,
+  postDelete,
+  postLike,
+  postCommentLike,
+  postCommentSave,
+  postCommentDelete,
+  postViewCount,
+
+  // 通知 (Notification)
+  notificationUpdate,
+  notificationGet,
+
+  // 通報 (Report)
+  reportSave,
+
+  // チケット (Ticket)
+  ticketUpdate,
+
+  // ペット (Pet)
+  petSave,
+  petUpdate,
+  petDelete,
+
+  // ユーザー情報 (User Info)
+  userInfoSave,
+  userInfoUpdate,
+  userInfoDelete,
+
+  // データ取得 (Data Get)
+  getData,
+
+  // Firestore READ
   firebaseRead,
-  firebaseWrite,
-  firebaseUpdate,
-  firebaseDelete,
-  
-  // Error関連
+
+  // FCMトークン更新 (FCM Token Update)
+  fcmTokenUpdate,
+
+  // エラー (Error)
+  error,
   errorFirebaseDatabase,
-  errorFirebaseAuth,
   errorFirebaseStorage,
   errorFirebaseFunctions,
-  
-  // 機能別イベント
-  reviewSave,
-  reviewDelete,
-  reviewUpdate,
-  postSave,
-  postDelete,
-  postUpdate,
-  petSave,
-  petDelete,
-  petUpdate,
-  userSave,
-  userUpdate,
-  userDelete,
-  
-  // その他
-  appLaunch,
-  screenView,
-  buttonClick,
+  errorFirebaseAuth,
+  errorAlgoliaSearch,
+
+  // リワード広告 (Reward Ad)
+  rewardAd,
+
+  // サインアップ (Sign Up/Out)
+  signUp,
+  signOut,
+  initializeNewUser,
+  deleteAccount,
 }
 
 /// Firestore操作の計測を行うクラス
