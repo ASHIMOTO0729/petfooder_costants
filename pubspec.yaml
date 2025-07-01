@@ -1,6 +1,6 @@
 name: shared_constants
 description: Shared constants package for petfood projects (petfood_development, petfooder, Firebase Functions)
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/username/shared_constants_package
 
 environment:
