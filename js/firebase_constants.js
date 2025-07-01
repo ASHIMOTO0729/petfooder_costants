@@ -86,6 +86,7 @@ const FirebaseConstants = {
         createdAt: "created_at", // 通知作成日時
         updatedAt: "updated_at", // 通知更新日時
         appRead: "notification_app_read", // 運営通知のステータス
+        notViewCount: "not_view_count", // 未読通知数
 
 
         //運営通知関連キー  
