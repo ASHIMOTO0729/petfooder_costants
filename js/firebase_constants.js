@@ -26,7 +26,20 @@ const FirebaseConstants = {
         productDebug: 'db_product',
         notificationApp: 'notification_app',
         notificationAppDebug: 'db_notification_app',
-        log: 'log'
+        report: 'report',
+    },
+
+    subCollections: {
+        productReviewLog: 'product_review_log',
+        fcmToken: 'fcm_token',
+        notificationLog: 'notification_log',
+        notificationLogApp: 'notification_log_app',
+        userLikeList: 'like_list',
+        myPetList: 'my_pet_list',
+        previewList: 'preview_list',
+        reviewList: 'product_review_list',
+        postCommentList: 'comment_list',
+        productReviewLikeList: 'product_review_like_list',
     },
 
     // Algolia
@@ -54,29 +67,47 @@ const FirebaseConstants = {
 
     // 通知関連キー - 最重要: Dart版と完全一致必須
     notification: {
-        topic: 'topic',
-        read: 'read',
-        isView: 'isView',
-        title: 'title',
-        body: 'body',
-        image: 'image',
-        id: 'id',
-        status: 'status',
-        createdAt: 'created_at',
-        updatedAt: 'updated_at',
-        notViewCount: 'not_view_count',
-        appRead: 'notification_app_status',
-        isRead: 'isRead'
+        topic: "topic", // 通知トピック
+        title: "title", // 通知タイトル
+        id: "id", // 通知ID
+        read: "read", // 読み込んだか
+        body: "body", // 通知本文
+        isView: "isView", // 閲覧したか
+        image: "image", // 通知画像
+        status: "status", // 通知ステータス
+
+        postDocId: "post_doc_id", // 投稿のドキュメントID
+        postCommentId: "post_comment_id", // 投稿コメントのドキュメントID
+        postCommentHostUid: "post_comment_host_uid", // 投稿コメントのホストUID
+        postCommentReplyUserUid: "post_comment_reply_user_uid", // 投稿コメントの返信先のユーザーUID
+        postCommentContent: "post_comment_content", // 投稿コメントの本文
+        postCommentReplyTo: "post_comment_reply_to", // 投稿コメントの返信先のユーザーUID
+        postCommentTargetUserUid: "post_comment_target_user_uid", // 投稿コメントの返信先のユーザーUID
+
+        createdAt: "created_at", // 通知作成日時
+        updatedAt: "updated_at", // 通知更新日時
+        appRead: "notification_app_read", // 運営通知のステータス
+
+
+        //運営通知関連キー  
+        topicLikeReview: "user_notification_like_review", // いいねのトピック
+        topicLikePost: "user_notification_like_post", // 投稿いいねのトピック
+        topicLikePostComment: "user_notification_like_post_comment", // 投稿コメントいいねのトピック
+
+        topicPostComment: "user_notification_post_comment", // 投稿コメントのトピック
+        topicApp: "user_notification_app", // 運営のトピック
     },
 
     // 通知トピック - 最重要: 3プロジェクト間で完全一致が必要
     notificationTopics: {
-        likeReview: 'user_notification_like_review',
-        likePost: 'user_notification_like_post',
-        likePostComment: 'user_notification_like_post_comment',
-        postComment: 'user_notification_post_comment',
-        app: 'user_notification_app',
-        appDebug: 'user_notification_app_debug'
+        likeReview: "user_notification_like_review", // いいねのトピック
+        likePost: "user_notification_like_post", // 投稿いいねのトピック
+        likePostComment: "user_notification_like_post_comment", // 投稿コメントいいねのトピック
+
+        postComment: "user_notification_post_comment", // 投稿コメントのトピック
+        app: "user_notification_app", // 運営のトピック
+        userUID: "user_uid", // 運営通知ドキュメントID
+        fcmToken: "fcm_token", // 運営通知ドキュメントID
     },
 
     // ペット関連
@@ -144,37 +175,137 @@ const FirebaseConstants = {
         feedingScore: 'product_feeding_score',
         feedingDuration: 'product_feeding_duration',
         personalityPopular: 'product_personality_popular',
+        categoryList: "product_category_list",
+        personalityList: "product_personality_list", // ペットの性格リスト
+
         price: 'product_price',
         shopURL: 'shop_url',
         display: 'product_display',
         makerURL: 'product_maker_url'
     },
+    review: {
+        // レビュー関連キー
+        title: "review_title", // レビュータイトル
+        body: "review_body", // レビュー本文
+        rating: "review_rating", // レビュー評価
+        id: "review_id", // レビューID
+        imageURL: "review_image_url",
+        docId: "review_doc_id", // レビューのドキュメントID
+        like: "review_like", // レビューいいね数
+        feedingScore: "review_feeding_score", // レビューの食いつき度
+        price: "review_price", // レビューの価格
+        repeat: "review_repeat", // レビューのリピート
+        noRepeat: "review_no_repeat", // レビューのリピートしない理由
+        feedingDuration: "review_feeding_duration", // レビュー与えた期間
+
+        // いいね関連キー
+        dogLikeList: "dog_product_review_like_list", // 犬のレビューいいねリスト
+        catLikeList: "cat_product_review_like_list", // 猫のレビューいいねリスト
+        postLikeList: "post_like_list", // 投稿のいいねリスト
+        feedingDurationList: "review_feeding_duration_list", // レビューの与えた期間リスト
+        feedingScoreList: "review_feeding_score_list", // レビューの食いつき度リスト
+        ratingList: "review_rating_list", // レビューの評価リスト
+        repeatList: "review_repeat_list", // レビューのリピートリスト
+        priceList: "review_price_list", // レビューの価格リスト
+
+    },
+    post: {
+        docId: "post_doc_id", // 投稿のドキュメントID
+        description: "description", // 投稿の説明
+        uploadStatus: "upload_status", // 投稿のアップロード状態
+        status: "status", // 投稿の公開状態
+        tags: "tags", // 投稿のタグ
+        language: "language", // 投稿の言語
+        aspectRatio: "aspect_ratio", // 投稿のメディアアスペクト比
+        authorUid: "author_uid", // 投稿の作者のユーザーID
+        petId: "pet_id", // 投稿のペットのペットID
+        likeCount: "like_count", // 投稿のいいね数
+        commentCount: "comment_count", // 投稿のコメント数
+        shareCount: "share_count", // 投稿のシェア数
+        viewCount: "view_count", // 投稿の閲覧数
+        isFlagged: "is_flagged", // 投稿が通報されているか
+        flaggedReason: "flagged_reason", // 投稿が通報された理由
+        thumbnailUrl: "thumbnail_url", // 投稿のサムネイルURL
+        videoUrl: "video_url", // 投稿の動画URL
+        videoDuration: "video_duration", // 投稿の動画の長さ
+        bgmId: "bgm_id", // 投稿のBGMのID
+        snsURL: "sns_url", // SNSURL
+
+        //加工前メディア
+        beforeImage: "before_image", // 投稿の加工前画像
+        beforeVideo: "before_video", // 投稿の加工前動画
+
+        //加工済みメディア
+        afterImage: "after_image", // 投稿の加工済み画像
+        afterVideo: "after_video", // 投稿の加工済み動画
+
+        //投稿コメント
+        commentDocId: "post_comment_doc_id", // 投稿コメントのドキュメントID
+        commentKey: "post_comment_key", // コメント固有のkey
+        commentId: "post_comment_id", // コメントID 親コメントのKeyをハッシュ 親コメントからリプライまで一貫して使用
+        commentHostUid: "post_comment_host_uid", // コメント投稿者参照
+        commentReplyUserUid: "post_comment_reply_user_uid", // コメント返信先参照
+        commentContent: "post_comment_content", // メンションタグを含む本文
+        commentMentions: "post_comment_mentions", // 通知・メンション解析用 UID 一覧
+        commentLikeCount: "post_comment_like_count", // コメントいいね高速表示
+        commentReplyCount: "post_comment_reply_count", // UI に「◯件の返信」を即表示
+        commentReplyTo: "post_comment_reply_to", // スレッド先 ID（null なら親コメント）
+        commentTargetUserUid: "post_comment_target_user_uid", // コメントの返信先
+        commentCreatedAt: "created_at", // コメント作成日時
+        commentUpdatedAt: "updated_at", // コメント更新日時
+    },
+
 
     // ユーザー情報
     user: {
-        displayName: 'display_name',
-        iconURL: 'icon_url',
-        bio: 'bio',
-        postCount: 'post_count',
-        reviewCount: 'review_count',
-        uid: 'uid',
-        ticket: 'user_ticket',
-        accountBan: 'account_ban',
-        id: 'user_id'
+        //ユーザー情報キー
+        displayName: "display_name", // ユーザーの表示名
+        bio: "bio", // ユーザーの自己紹介
+        iconURL: "icon_url", // ユーザーのアイコンURL
+        uid: "uid", // ユーザーのUID
+        userID: "user_id", // ユーザーのユーザーID
+        totalPostCount: "post_count",
+        totalReviewCount: "review_count", // ユーザーのレビュー数
+        postList: "user_post_list", // ユーザーの投稿リスト
+        ticketLog: "user_ticket_log", // ユーザーのチケットログ
+        ticketLogGetFirstLogin: "get50_first_login", //アプリで初めてのログイン
+        accountBan: "account_ban", // アカウントバン
+        userTicket: "user_ticket", // ユーザーのチケット
+    },
+
+    device: {
+        //デバイス情報キー
+        uploadDevice: "upload_device", // 投稿のアップロードデバイス
+        uploadOS: "upload_os", // 投稿のアップロードOS
+        uploadOSVersion: "upload_os_version", // 投稿のアップロードOSバージョン
+
     },
 
     // 共通
     common: {
         createdAt: 'created_at',
-        updatedAt: 'updated_at'
+        updatedAt: 'updated_at',
+        displayFlag: 'display_flag',
+        ttl: 'ttl'
     }
 };
+
+const StorageConstants = {
+    fileMyPet: 'my_pet',
+    filePost: 'post',
+    filePostDB: 'db_post',
+    fileUser: 'user',
+    fileProduct: 'product',
+    fileProductReview: 'product_review',
+    fileNotificationApp: 'notification_app',
+    fileNotificationDBApp: 'db_notification_app',
+}
 
 // Firebase Functions用の定数
 const FunctionConstants = {
     // Function名
     sendAppNotification: 'sendAppNotification',
-    
+
     // sendAppNotification関数のパラメータ名
     params: {
         title: 'title',
@@ -182,7 +313,7 @@ const FunctionConstants = {
         image: 'image',
         debug: 'debug'
     },
-    
+
     // sendAppNotification関数のレスポンス名
     response: {
         success: 'success',
@@ -190,8 +321,10 @@ const FunctionConstants = {
     }
 };
 
+
 module.exports = {
     FirebaseConstants,
     FunctionConstants,
+    StorageConstants,
     getCollectionName
 };
