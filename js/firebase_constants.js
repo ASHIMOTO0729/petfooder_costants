@@ -54,7 +54,6 @@ const FirebaseConstants = {
         productReviewList: 'product_review_list',
         fcmToken: 'fcm_token',
         notificationLog: 'notification_log',
-        notificationLogApp: 'notification_log_app',
         userLikeList: 'like_list',
         myPetList: 'my_pet_list',
         deleteLog: 'delete_log',
@@ -288,8 +287,10 @@ const FirebaseConstants = {
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         displayFlag: 'display_flag',
+        metadata: 'metadata',
         ttl: 'ttl'
     }
+
 };
 
 const StorageConstants = {

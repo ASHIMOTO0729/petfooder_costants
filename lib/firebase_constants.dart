@@ -316,6 +316,10 @@ class FDBnaming {
   static const keyCreatedAt = 'created_at';
   static const keyUpdatedAt = 'updated_at';
 
+  // メタデータ
+  static const keyMetadata = 'metadata';
+
+
 }
 
 /// Firebase Config関連の定数管理クラス
