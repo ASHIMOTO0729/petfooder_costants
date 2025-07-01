@@ -18,6 +18,8 @@ const FirebaseConstants = {
     collections: {
         user: 'user',
         userDebug: 'db_user',
+        userNameMap: 'user_name_map',
+        userNameMapDebug: 'db_user_name_map',
         post: 'post',
         postDebug: 'db_post',
         product: 'product',

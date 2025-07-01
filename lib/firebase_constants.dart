@@ -20,6 +20,8 @@ class FDBnaming {
   String get collectionNotificationApp => '${flavor}notification_app';  // petfooder方式
   String get collectionNotificationAppDebug => 'db_notification_app';
   String get collectionLog => 'log';
+  String get collectionUserNameMap => '${flavor}user_name_map';
+  String get collectionUserNameMapDebug => 'db_user_name_map';
 
   // Algolia
   static const collectionAlgoliaProduct = 'product';
