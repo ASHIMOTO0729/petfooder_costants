@@ -272,7 +272,7 @@ const FirebaseConstants = {
         ticketLogGetFirstLogin: "get50_first_login", //アプリで初めてのログイン
         accountBan: "account_ban", // アカウントバン
         ticket: "user_ticket", // ユーザーのチケット
-
+        notificationNotViewCount: "user_notification_not_view_count", // 未読通知数
     },
 
     device: {

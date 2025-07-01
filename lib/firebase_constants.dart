@@ -261,6 +261,7 @@ class FDBnaming {
   static const keyUserTicketLogGetFirstLogin = 'get50_first_login';
   static const keyUserPostPreviewList = 'user_post_preview_list';
   static const keyUserReviewPreviewList = 'user_review_preview_list';
+  static const keyUserNotificationNotViewCount = 'user_notification_not_view_count';
 
   // デバイス情報
   static const keyDevice = 'device';
