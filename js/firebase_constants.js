@@ -273,6 +273,7 @@ const FirebaseConstants = {
         accountBan: "account_ban", // アカウントバン
         ticket: "user_ticket", // ユーザーのチケット
         notificationNotViewCount: "user_notification_not_view_count", // 未読通知数
+        userList: "user_list", // ユーザーのリスト
     },
 
     device: {
