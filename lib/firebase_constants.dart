@@ -170,13 +170,7 @@ class FDBnaming {
   static const keyNotificationPostCommentContent = 'post_comment_content';
   static const keyNotificationPostCommentReplyTo = 'post_comment_reply_to';
 
-  // 通知トピック - 最重要: 3プロジェクト間で完全一致が必要
-  static const keyUserNotificationTopicLikeReview = 'user_notification_like_review';
-  static const keyUserNotificationTopicLikePost = 'user_notification_like_post';
-  static const keyUserNotificationTopicLikePostComment = 'user_notification_like_post_comment';
-  static const keyUserNotificationTopicPostComment = 'user_notification_post_comment';
-  static const keyUserNotificationTopicApp = 'user_notification_app';
-  static const keyUserNotificationTopicAppDebug = 'user_notification_app_debug';
+
 
   // カテゴリーリスト
   static const keyCategoryCategories = 'categories';
