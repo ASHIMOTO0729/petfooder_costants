@@ -1,7 +1,7 @@
 import 'firebase_utils.dart';
 
 /// Firebase関連の定数を一元管理するクラス
-/// 
+///
 /// petfood_development, petfooder, Firebase Functions間で共有される
 /// すべての定数はここで管理し、他のプロジェクトで重複定義しない
 /// petfooder方式のflavor処理を採用
@@ -11,13 +11,13 @@ class FDBnaming {
 
   // コレクション名 (petfooder方式: flavor prefix適用)
   String get collectionUser => '${flavor}user';
-  String get collectionUserDebug => 'db_user';  // 明示的にdb_
+  String get collectionUserDebug => 'db_user'; // 明示的にdb_
   String get collectionPost => '${flavor}post';
-  String get collectionPostDebug => 'db_post';  // 明示的にdb_
-  String get collectionProduct => '${flavor}product';  // petfooder方式
+  String get collectionPostDebug => 'db_post'; // 明示的にdb_
+  String get collectionProduct => '${flavor}product'; // petfooder方式
   String get collectionProductDebug => 'db_product';
-  String get collectionReport => '${flavor}report';  // petfooderにある
-  String get collectionNotificationApp => '${flavor}notification_app';  // petfooder方式
+  String get collectionReport => '${flavor}report'; // petfooderにある
+  String get collectionNotificationApp => '${flavor}notification_app'; // petfooder方式
   String get collectionNotificationAppDebug => 'db_notification_app';
   String get collectionLog => 'log';
   String get collectionUserNameMap => '${flavor}user_name_map';
@@ -247,7 +247,8 @@ class FDBnaming {
   static const keyUserUid = 'uid';
   static const keyUserId = 'user_id';
   static const keyUserList = 'user_list';
-
+  static const keyUserPostPreviewList = 'user_post_preview_list';
+  static const keyUserReviewPreviewList = 'user_review_preview_list';
 
   // デバイス情報
   static const keyDevice = 'device';
@@ -299,8 +300,6 @@ class FDBnaming {
 
   // メタデータ
   static const keyMetadata = 'metadata';
-
-
 }
 
 /// Firebase Config関連の定数管理クラス
