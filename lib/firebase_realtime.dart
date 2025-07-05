@@ -12,6 +12,7 @@ class FRDnaming {
   static const String pathPostLikeCounts = 'post_like_counts'; //いいね数
   static const String pathPostShareCounts = 'post_share_counts'; //シェア数
   static const String pathPostCommentCounts = 'post_comment_counts'; //コメント数
+  static const String pathPostCommentReplyCounts = 'post_comment_reply_counts'; //コメント返信数
   static const String pathPostCommentLikeCounts = 'post_comment_like_counts'; //コメントいいね数
 
   //--------------------------------
