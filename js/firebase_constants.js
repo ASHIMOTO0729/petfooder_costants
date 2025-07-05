@@ -10,6 +10,32 @@ function getCollectionName(baseName, debug = false) {
     return debug ? `db_${baseName}` : baseName;
 }
 
+const FirebaseRealtime = {
+    // 投稿
+    pathPostViewCounts: 'post_view_counts',
+    pathPostLikeCounts: 'post_like_counts',
+    pathPostShareCounts: 'post_share_counts',
+    pathPostCommentCounts: 'post_comment_counts',
+    pathPostCommentLikeCounts: 'post_comment_like_counts',
+
+    // ペット
+    pathPetViewCounts: 'pet_post_view_counts',
+    pathPetLikeCounts: 'pet_post_like_counts',
+    pathPetReviewLikeCounts: 'pet_review_like_counts',
+
+    // ユーザー
+    pathAccountBan: 'account_ban',
+    pathUserTicketCounts: 'user_ticket_counts',
+    pathUserPostCounts: 'user_post_counts',
+    pathUserReviewCounts: 'user_review_counts',
+    pathUserReviewLikeCounts: 'user_review_like_counts',
+    pathUserNotificationUnreadCounts: 'user_notification_unread_counts',
+    pathUserTicketLogGetReviewAd: 'user_ticket_log_get_review_ad',
+    pathUserTicketLogGetReviewNoAd: 'user_ticket_log_get_review_no_ad',
+    pathUserTicketLogLostPost: 'user_ticket_log_lost_post',
+    pathUserTicketLogGetFirstLogin: 'user_ticket_log_get_first_login',
+}
+
 const FirebaseConstants = {
     // 基本的なキー
     keyGetDataAt: 'get_data_at',
@@ -331,5 +357,6 @@ module.exports = {
     FirebaseConstants,
     FunctionConstants,
     StorageConstants,
-    getCollectionName
+    getCollectionName,
+    FirebaseRealtime
 };

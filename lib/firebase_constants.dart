@@ -57,9 +57,6 @@ class FDBnaming {
   static const keyPetSize = 'pet_size';
   static const keyPetId = 'pet_id';
   static const keyPetDocId = 'pet_doc_id';
-  static const kyePetTotalLikeReview = "pet_total_like_review";
-  static const kyePetTotalLikePost = "pet_total_like_post";
-  static const kyePetTotalViewPost = "pet_total_view_post";
   static const kyePetExpirationDate = "pet_expiration_date";
   static const kyePetOverview = "pet_overview";
   static const kyePetCardColor = "pet_card_color";
@@ -162,7 +159,6 @@ class FDBnaming {
   static const keyNotificationStatus = 'status';
   static const keyNotificationCreatedAt = 'created_at';
   static const keyNotificationUpdatedAt = 'updated_at';
-  static const keyNotificationNotViewCount = 'not_view_count';
   static const keyNotificationAppRead = 'notification_app_status';
   static const keyNotificationIsRead = 'isRead';
 
@@ -248,20 +244,8 @@ class FDBnaming {
   static const keyUserDisplayName = 'display_name';
   static const keyUserIconURL = 'icon_url';
   static const keyUserBio = 'bio';
-  static const keyUserPostCount = 'post_count';
-  static const keyUserReviewCount = 'review_count';
   static const keyUserUid = 'uid';
-  static const keyUserTicket = 'user_ticket';
-  static const keyUserAccountBan = 'account_ban';
   static const keyUserId = 'user_id';
-  static const keyUserTicketLog = 'user_ticket_log';
-  static const keyUserTicketLogGetReviewAd = 'get2_review_ad';
-  static const keyUserTicketLogGetReviewNoAd = 'get1_review_no_ad';
-  static const keyUserTicketLogLostPost = 'lost1_post';
-  static const keyUserTicketLogGetFirstLogin = 'get50_first_login';
-  static const keyUserPostPreviewList = 'user_post_preview_list';
-  static const keyUserReviewPreviewList = 'user_review_preview_list';
-  static const keyUserNotificationNotViewCount = 'user_notification_not_view_count';
   static const keyUserList = 'user_list';
 
 
@@ -280,10 +264,6 @@ class FDBnaming {
   static const keyPostPetDocIdList = 'pet_docid_list';
   static const keyPostStatus = 'status';
   static const keyPostUploadStatus = 'upload_status';
-  static const keyPostLikeCount = 'like_count';
-  static const keyPostCommentCount = 'comment_count';
-  static const keyPostShareCount = 'share_count';
-  static const keyPostViewCount = 'view_count';
   static const keyPostIsFlagged = 'is_flagged';
   static const keyPostFlaggedReason = 'flagged_reason';
   static const keyPostBgmId = 'bgm_id';
@@ -307,9 +287,7 @@ class FDBnaming {
   static const keyPostCommentHostUid = 'post_comment_host_uid';
   static const keyPostCommentContent = 'post_comment_content';
   static const keyPostCommentMentions = 'post_comment_mentions';
-  static const keyPostCommentLikeCount = 'post_comment_like_count';
   static const keyPostCommentReplyUserUid = 'post_comment_reply_user_uid';
-  static const keyPostCommentReplyCount = 'post_comment_reply_count';
   static const keyPostCommentReplyTo = 'post_comment_reply_to';
   static const keyPostCommentTargetUserUid = 'post_comment_target_user_uid';
   static const keyPostCommentCreatedAt = 'created_at';

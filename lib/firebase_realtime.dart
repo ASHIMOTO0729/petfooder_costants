@@ -12,14 +12,14 @@ class FirebaseRealtime {
   //--------------------------------
   // ペット
   //--------------------------------
-  static const String pathPetViewCounts = 'pet_view_counts'; //合計視聴数
-  static const String pathPetLikeCounts = 'pet_like_counts'; //合計投稿いいね数
-  static const String pathPetCommentCounts = 'pet_comment_counts'; //合計レビュー数
-  static const String pathPetCommentLikeCounts = 'pet_comment_like_counts'; //合計レビューいいね数
+  static const String pathPetViewCounts = 'pet_post_view_counts'; //合計視聴数
+  static const String pathPetLikeCounts = 'pet_post_like_counts'; //合計投稿いいね数
+  static const String pathPetReviewLikeCounts = 'pet_review_like_counts'; //合計レビューいいね数
 
   //--------------------------------
   // ユーザー
   //--------------------------------
+  static const String pathAccountBan = 'account_ban'; //アカウントバン数
   static const String pathUserTicketCounts = 'user_ticket_counts'; //チケット枚数
   static const String pathUserPostCounts = 'user_post_counts'; //投稿数
   static const String pathUserReviewCounts = 'user_review_counts'; //レビュー数
