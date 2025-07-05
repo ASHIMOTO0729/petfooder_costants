@@ -11,6 +11,10 @@ function getCollectionName(baseName, debug = false) {
 }
 
 const FirebaseRealtime = {
+
+    // 基盤
+    baseUserPath: 'user',
+    basePostPath: 'count',
     // 投稿
     pathPostViewCounts: 'post_view_counts',
     pathPostLikeCounts: 'post_like_counts',
