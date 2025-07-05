@@ -1,7 +1,12 @@
 class FRDnaming {
-  // Realtime Database パス
+  // Realtime Database 基盤
+  static const String baseCountPath = 'count';
+  static const String debugPrefix = 'db_';
+  
+ 
+
   //--------------------------------
-  // 投稿
+  // 投稿カウント
   //--------------------------------
   static const String pathPostViewCounts = 'post_view_counts'; //視聴数
   static const String pathPostLikeCounts = 'post_like_counts'; //いいね数
@@ -10,14 +15,14 @@ class FRDnaming {
   static const String pathPostCommentLikeCounts = 'post_comment_like_counts'; //コメントいいね数
 
   //--------------------------------
-  // ペット
+  // ペットカウント
   //--------------------------------
   static const String pathPetViewCounts = 'pet_post_view_counts'; //合計視聴数
   static const String pathPetLikeCounts = 'pet_post_like_counts'; //合計投稿いいね数
   static const String pathPetReviewLikeCounts = 'pet_review_like_counts'; //合計レビューいいね数
 
   //--------------------------------
-  // ユーザー
+  // ユーザーカウント
   //--------------------------------
   static const String pathAccountBan = 'account_ban'; //アカウントバン数
   static const String pathUserTicketCounts = 'user_ticket_counts'; //チケット枚数
@@ -30,7 +35,5 @@ class FRDnaming {
   static const String pathUserTicketLogLostPost = 'user_ticket_log_lost_post'; //投稿消費チケット数
   static const String pathUserTicketLogGetFirstLogin = 'user_ticket_log_get_first_login'; //初回ログインチケット取得数
 
-
-  
 
 }
