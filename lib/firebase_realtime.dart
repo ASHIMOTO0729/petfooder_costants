@@ -1,4 +1,4 @@
-class FirebaseRealtime {
+class FRDnaming {
   // Realtime Database パス
   //--------------------------------
   // 投稿
