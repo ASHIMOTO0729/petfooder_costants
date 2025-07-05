@@ -1,7 +1,7 @@
 class FRDnaming {
   // Realtime Database 基盤
   static const String baseCountPath = 'count';
-  static const String debugPrefix = 'db_';
+  static const String baseUserPath = 'user';
   
  
 
