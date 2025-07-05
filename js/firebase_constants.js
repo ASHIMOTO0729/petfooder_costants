@@ -21,6 +21,7 @@ const FirebaseRealtime = {
     pathPostShareCounts: 'post_share_counts',
     pathPostCommentCounts: 'post_comment_counts',
     pathPostCommentLikeCounts: 'post_comment_like_counts',
+    pathPostCommentReplyCounts: 'post_comment_reply_counts', //コメント返信数
 
     // ペット
     pathPetViewCounts: 'pet_post_view_counts',
