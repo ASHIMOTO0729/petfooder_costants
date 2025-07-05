@@ -11,35 +11,64 @@ function getCollectionName(baseName, debug = false) {
 }
 
 const FirebaseRealtime = {
-
-    // 基盤
+    // Realtime Database 基盤
+    baseCountPath: 'count',
     baseUserPath: 'user',
-    basePostPath: 'count',
-    // 投稿
-    pathPostViewCounts: 'post_view_counts',
-    pathPostLikeCounts: 'post_like_counts',
-    pathPostShareCounts: 'post_share_counts',
-    pathPostCommentCounts: 'post_comment_counts',
-    pathPostCommentLikeCounts: 'post_comment_like_counts',
-    pathPostCommentReplyCounts: 'post_comment_reply_counts', //コメント返信数
 
-    // ペット
-    pathPetViewCounts: 'pet_post_view_counts',
-    pathPetLikeCounts: 'pet_post_like_counts',
-    pathPetReviewLikeCounts: 'pet_review_like_counts',
+    //
 
-    // ユーザー
-    pathAccountBan: 'account_ban',
-    pathUserTicketCounts: 'user_ticket_counts',
-    pathUserPostCounts: 'user_post_counts',
-    pathUserReviewCounts: 'user_review_counts',
-    pathUserReviewLikeCounts: 'user_review_like_counts',
-    pathUserNotificationUnreadCounts: 'user_notification_unread_counts',
-    pathUserTicketLogGetReviewAd: 'user_ticket_log_get_review_ad',
-    pathUserTicketLogGetReviewNoAd: 'user_ticket_log_get_review_no_ad',
-    pathUserTicketLogLostPost: 'user_ticket_log_lost_post',
-    pathUserTicketLogGetFirstLogin: 'user_ticket_log_get_first_login',
-}
+    //--------------------------------
+    // 投稿カウント
+    //--------------------------------
+    subPostCount: 'post_count',
+    keyPostViewCounts: 'post_view_counts', //視聴数
+    keyPostLikeCounts: 'post_like_counts', //いいね数
+    keyPostShareCounts: 'post_share_counts', //シェア数
+    keyPostCommentCounts: 'post_comment_counts', //コメント数
+    //----
+
+    subPostCommentReplyCounts: 'post_comment_reply_counts', //コメント返信数
+    subPostCommentLikeCounts: 'post_comment_like_counts', //コメントいいね数
+
+    //--------------------------------
+    // ペットカウント
+    //--------------------------------
+    subPetCount: 'pet_count',
+    keyPetViewCounts: 'pet_post_view_counts', //合計視聴数
+    keyPetLikeCounts: 'pet_post_like_counts', //合計投稿いいね数
+    keyPetReviewLikeCounts: 'pet_review_like_counts', //合計レビューいいね数
+
+    //--------------------------------
+    // ユーザーカウント
+    //--------------------------------
+
+    subAccountBan: 'account_ban', //アカウントバン数
+    //----
+    //カウント
+    subUserCount: 'user_count',
+    keyUserPostCounts: 'user_post_counts', //投稿数
+    keyUserReviewCounts: 'user_review_counts', //レビュー数
+    keyUserTicketCounts: 'user_ticket_counts', //チケット枚数
+    //----
+    //通知の許可
+    subUserNotification: 'user_notification',
+    keyUserNotificationTopicLikeReview: 'user_notification_like_review',
+    keyUserNotificationTopicLikePost: 'user_notification_like_post',
+    keyUserNotificationTopicLikePostComment: 'user_notification_like_post_comment',
+    keyUserNotificationTopicPostComment: 'user_notification_post_comment',
+    keyUserNotificationTopicApp: 'user_notification_app',
+    keyUserNotificationTopicAppDebug: 'user_notification_app_debug',
+    //----
+    //チケット
+    subUserTicketLog: 'user_ticket_log',
+    keyUserTicketLogGetReviewAd: 'user_ticket_log_get_review_ad', //レビュー広告チケット取得数
+    keyUserTicketLogGetReviewNoAd: 'user_ticket_log_get_review_no_ad', //レビュー非広告チケット取得数
+    keyUserTicketLogLostPost: 'user_ticket_log_lost_post', //投稿消費チケット数
+    keyUserTicketLogGetFirstLogin: 'user_ticket_log_get_first_login', //初回ログインチケット取得数
+    //----
+    //通知
+    subUserNotificationUnreadCounts: 'user_notification_unread_counts', //通知の未読数
+};
 
 const FirebaseConstants = {
     // 基本的なキー
