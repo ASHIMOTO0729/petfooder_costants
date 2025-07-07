@@ -326,9 +326,7 @@ const FirebaseConstants = {
     // ユーザー情報
     user: {
         //ユーザー情報キー
-        displayName: "display_name", // ユーザーの表示名
         bio: "bio", // ユーザーの自己紹介
-        iconURL: "icon_url", // ユーザーのアイコンURL
         uid: "uid", // ユーザーのUID
         id: "user_id", // ユーザーのユーザーID
         totalPostCount: "post_count",
