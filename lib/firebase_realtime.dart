@@ -1,5 +1,6 @@
 /// データ構成は以下
-/// base/sub/{id}/key
+/// base/sub/{id}/[key:value]
+/// base/sub/{id}:value
 class FRDnaming {
   // Realtime Database 基盤
   static const String baseCountPath = 'count';
@@ -39,6 +40,12 @@ class FRDnaming {
   static const String keyUserPostCounts = 'user_post_counts'; //投稿数
   static const String keyUserReviewCounts = 'user_review_counts'; //レビュー数
   static const String keyUserTicketCounts = 'user_ticket_counts'; //チケット枚数
+
+  //簡易アカウント情報(名前とプロフィール画像)
+  static const String subUserSimple = 'user_simple';
+  static const String keyUserSimpleName = 'user_display_name'; //表示名
+  static const String keyUserSimpleProfileImage = 'user_profile_image'; //プロフィール画像
+
   //----
   //通知の許可
   static const String subUserNotification = 'user_notification';

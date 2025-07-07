@@ -49,6 +49,12 @@ const FirebaseRealtime = {
     keyUserPostCounts: 'user_post_counts', //投稿数
     keyUserReviewCounts: 'user_review_counts', //レビュー数
     keyUserTicketCounts: 'user_ticket_counts', //チケット枚数
+
+    //簡易アカウント情報(名前とプロフィール画像)
+    subUserSimple: 'user_simple',
+    keyUserSimpleName: 'user_display_name', //表示名
+    keyUserSimpleProfileImage: 'user_profile_image', //プロフィール画像
+
     //----
     //通知の許可
     subUserNotification: 'user_notification',
