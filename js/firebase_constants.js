@@ -54,7 +54,7 @@ const FirebaseRealtime = {
     subUserSimple: 'user_simple',
     keyUserSimpleName: 'user_display_name', //表示名
     keyUserSimpleProfileImage: 'user_profile_image', //プロフィール画像
-
+    keyUserSimpleBio: 'user_bio', //自己紹介
     //----
     //通知の許可
     subUserNotification: 'user_notification',
@@ -326,17 +326,10 @@ const FirebaseConstants = {
     // ユーザー情報
     user: {
         //ユーザー情報キー
-        bio: "bio", // ユーザーの自己紹介
         uid: "uid", // ユーザーのUID
         id: "user_id", // ユーザーのユーザーID
-        totalPostCount: "post_count",
-        totalReviewCount: "review_count", // ユーザーのレビュー数
         postList: "user_post_list", // ユーザーの投稿リスト
-        ticketLog: "user_ticket_log", // ユーザーのチケットログ
-        ticketLogGetFirstLogin: "get50_first_login", //アプリで初めてのログイン
         accountBan: "account_ban", // アカウントバン
-        ticket: "user_ticket", // ユーザーのチケット
-        notificationNotViewCount: "user_notification_not_view_count", // 未読通知数
         userList: "user_list", // ユーザーのリスト
     },
 

@@ -235,7 +235,6 @@ class FDBnaming {
   static const keyReportTargetContent = 'report_target_content';
 
   // ユーザー情報
-  static const keyUserBio = 'bio';
   static const keyUserUid = 'uid';
   static const keyUserId = 'user_id';
   static const keyUserList = 'user_list';
