@@ -8,6 +8,8 @@ import 'firebase_utils.dart';
 class FDBnaming {
   String flavor = getCollectionPrefix();
   static const keyGetDataAt = 'get_data_at';
+  static const keyGetProfileAt = 'get_profile_at';
+  static const keyGetCountAt = 'get_count_at';
 
   // コレクション名 (petfooder方式: flavor prefix適用)
   String get collectionUser => '${flavor}user';
