@@ -27,7 +27,9 @@ const FirebaseRealtime = {
     keyPostCommentCounts: 'post_comment_counts', //コメント数
     //----
 
-    subPostCommentLikeCounts: 'post_comment_like_counts', //コメントいいね数
+    subPostCommentLikeCounts: 'post_comment', //コメントいいね数
+    keyPostCommentReplyCounts: 'post_comment_reply_counts', //コメント返信数
+    keyPostCommentReplyTo: 'post_comment_like_counts', //コメントいいね数
 
     //--------------------------------
     // ペットカウント
