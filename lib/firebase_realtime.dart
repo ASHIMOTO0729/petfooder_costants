@@ -18,7 +18,6 @@ class FRDnaming {
   static const String keyPostCommentCounts = 'post_comment_counts'; //コメント数
   //----
 
-  static const String subPostCommentReplyCounts = 'post_comment_reply_counts'; //コメント返信数
   static const String subPostCommentLikeCounts = 'post_comment_like_counts'; //コメントいいね数
 
   //--------------------------------
