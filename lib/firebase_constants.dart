@@ -172,8 +172,6 @@ class FDBnaming {
   static const keyNotificationPostCommentContent = 'post_comment_content';
   static const keyNotificationPostCommentReplyTo = 'post_comment_reply_to';
 
-
-
   // カテゴリーリスト
   static const keyCategoryCategories = 'categories';
   static const keyCategoryCatFoodBrand = 'catFoodBrand';
