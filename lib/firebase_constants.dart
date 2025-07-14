@@ -156,6 +156,8 @@ class FDBnaming {
   static const keyNotificationIsView = 'isView';
   static const keyNotificationTitle = 'title';
   static const keyNotificationBody = 'body';
+  static const keyNotificationToUid = 'to_user_uid';
+  static const keyNotificationToPostDocId = 'to_post_doc_id';
   static const keyNotificationImage = 'image';
   static const keyNotificationID = 'id';
   static const keyNotificationStatus = 'status';
