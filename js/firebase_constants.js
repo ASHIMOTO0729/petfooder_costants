@@ -137,9 +137,11 @@ const FirebaseConstants = {
         read: "read", // 読み込んだか
         body: "body", // 通知本文
         postDocId: "post_doc_id", // 投稿のドキュメントID
+        toUid: "to_user_uid", // 通知先のユーザーUID
         isView: "isView", // 閲覧したか
         image: "image", // 通知画像
         status: "status", // 通知ステータス
+
         
 
         postDocId: "post_doc_id", // 投稿のドキュメントID
