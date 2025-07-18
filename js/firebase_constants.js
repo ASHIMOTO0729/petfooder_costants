@@ -75,17 +75,13 @@ const FirebaseRealtime = {
     subUserNotificationUnreadCounts: 'user_notification_unread_counts', //通知の未読数
 
     //--------------------------------
-    //削除された投稿
-    subPostDeleted : 'post_deleted', //削除された投稿
-    //削除されたペット
-    subPetDeleted : 'pet_deleted', //削除されたペット
-    //削除されたレビュー
-    subReviewDeleted : 'review_deleted',//削除されたレビュー
-    //削除されたユーザー
-    subUserDeleted : 'user_deleted', //削除されたユーザー
-
-    //ステータス
-    valueDeleted : 'deleted', //ステータス
+    //削除内容
+    subDeletingLog : 'deleting_log', //削除された投稿
+    keydeletedAt: 'deleted_at', //削除日時
+    keyDeletedDocId: 'deleted_doc_id', //削除された投稿のドキュメントID
+    keyDeletedType: 'deleted_type', //削除された投稿のタイプ
+    keyDeletedBy: 'deleted_by', //削除した人
+   
 };
 
 const FirebaseConstants = {
