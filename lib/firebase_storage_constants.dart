@@ -1,7 +1,7 @@
 import 'firebase_utils.dart';
 
 //投稿のアップロード状態
-enum PostUploadStatus {
+enum UploadStatus {
   completed,
   uploading,
   deleted,
