@@ -65,4 +65,16 @@ class FRDnaming {
   //----
   //通知
   static const String subUserNotificationUnreadCounts = 'user_notification_unread_counts'; //通知の未読数
+
+  //削除された投稿
+  static const String subPostDeleted = 'post_deleted'; //削除された投稿
+  //削除されたペット
+  static const String subPetDeleted = 'pet_deleted'; //削除されたペット
+  //削除されたレビュー
+  static const String subReviewDeleted = 'review_deleted'; //削除されたレビュー
+  //削除されたユーザー
+  static const String subUserDeleted = 'user_deleted'; //削除されたユーザー
+
+  //ステータス
+  static const String valueDeleted = 'deleted'; //ステータス
 }

@@ -4,6 +4,7 @@ import 'firebase_utils.dart';
 enum PostUploadStatus {
   completed,
   uploading,
+  deleted,
   error,
 }
 

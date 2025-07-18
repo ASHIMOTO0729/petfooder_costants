@@ -73,6 +73,19 @@ const FirebaseRealtime = {
     //----
     //通知
     subUserNotificationUnreadCounts: 'user_notification_unread_counts', //通知の未読数
+
+    //--------------------------------
+    //削除された投稿
+    subPostDeleted : 'post_deleted', //削除された投稿
+    //削除されたペット
+    subPetDeleted : 'pet_deleted', //削除されたペット
+    //削除されたレビュー
+    subReviewDeleted : 'review_deleted',//削除されたレビュー
+    //削除されたユーザー
+    subUserDeleted : 'user_deleted', //削除されたユーザー
+
+    //ステータス
+    valueDeleted : 'deleted', //ステータス
 };
 
 const FirebaseConstants = {
@@ -142,7 +155,7 @@ const FirebaseConstants = {
         image: "image", // 通知画像
         status: "status", // 通知ステータス
 
-        
+
 
         postDocId: "post_doc_id", // 投稿のドキュメントID
         postCommentId: "post_comment_id", // 投稿コメントのドキュメントID
