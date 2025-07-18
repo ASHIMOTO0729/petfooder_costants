@@ -77,7 +77,7 @@ const FirebaseRealtime = {
     //--------------------------------
     //削除内容
     subDeletingLog : 'deleting_log', //削除された投稿
-    keydeletedAt: 'deleted_at', //削除日時
+    keyDeletedAt: 'deleted_at', //削除日時
     keyDeletedDocId: 'deleted_doc_id', //削除された投稿のドキュメントID
     keyDeletedType: 'deleted_type', //削除された投稿のタイプ
     keyDeletedBy: 'deleted_by', //削除した人
@@ -206,7 +206,8 @@ const FirebaseConstants = {
         totalViewPost: 'pet_total_view_post',
         expirationDate: 'pet_expiration_date',
         overview: 'pet_overview',
-        cardColor: 'pet_card_color'
+        cardColor: 'pet_card_color',
+        status: 'status'
     },
 
     // 商品関連

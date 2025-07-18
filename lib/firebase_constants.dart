@@ -62,6 +62,7 @@ class FDBnaming {
   static const kyePetExpirationDate = "pet_expiration_date";
   static const kyePetOverview = "pet_overview";
   static const kyePetCardColor = "pet_card_color";
+  static const keyPetStates = 'status'; // ペットカードの色
 
   // Algolia商品データ
   static const keyAlgoliaProductName = 'title';
