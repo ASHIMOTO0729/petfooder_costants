@@ -262,6 +262,9 @@ class FDBnaming {
   static const keyPostIsFlagged = 'is_flagged';
   static const keyPostFlaggedReason = 'flagged_reason';
   static const keyPostBgmId = 'bgm_id';
+  static const keyPostBgmVol = 'bgm_vol';
+  static const keyPostVol = 'post_vol';
+
   static const keyPostSnsURL = 'sns_url';
   static const keyPostUserInfo = 'user_info';
   static const keyPostPreviewDocId = 'post_preview_doc_id';

@@ -298,6 +298,7 @@ const FirebaseConstants = {
         aspectRatio: "aspect_ratio", // 投稿のメディアアスペクト比
         authorUid: "author_uid", // 投稿の作者のユーザーID
         petId: "pet_id", // 投稿のペットのペットID
+
         likeCount: "like_count", // 投稿のいいね数
         commentCount: "comment_count", // 投稿のコメント数
         shareCount: "share_count", // 投稿のシェア数
@@ -308,6 +309,8 @@ const FirebaseConstants = {
         videoUrl: "video_url", // 投稿の動画URL
         videoDuration: "video_duration", // 投稿の動画の長さ
         bgmId: "bgm_id", // 投稿のBGMのID
+        bgmVol: "bgm_vol", // 投稿のBGMの名前
+        vol: "vol", // 投稿の音量
         snsURL: "sns_url", // SNSURL
 
         //加工前メディア
