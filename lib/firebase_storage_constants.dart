@@ -2,7 +2,7 @@ import 'firebase_utils.dart';
 
 //投稿のアップロード状態
 enum UploadStatus {
-  closed,
+  private,
   completed,
   uploading,
   deleted,
