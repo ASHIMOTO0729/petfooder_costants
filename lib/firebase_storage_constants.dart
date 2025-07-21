@@ -2,18 +2,14 @@ import 'firebase_utils.dart';
 
 //投稿のアップロード状態
 enum UploadStatus {
+  closed,
   completed,
   uploading,
   deleted,
   error,
 }
 
-//投稿の公開状態
-enum PostStatus {
-  public,
-  private,
-  draft,
-}
+
 
 /// Firebase Storage関連の定数 (FSnaming相当)
 /// petfooder方式のflavor処理を適用
