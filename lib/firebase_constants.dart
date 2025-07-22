@@ -297,6 +297,19 @@ class FDBnaming {
 
   // メタデータ
   static const keyMetadata = 'metadata';
+  
+  // BGM関連（Firestore）
+  static const keyBgmId = 'id';
+  static const keyBgmStorageUrl = 'storageURL';
+  static const keyBgmDuration = 'duration';
+  static const keyBgmDescription = 'description';
+  static const keyBgmFileSize = 'fileSize';
+  static const keyBgmMimeType = 'mimeType';
+  static const keyBgmCreatedAt = 'createdAt';
+  static const keyBgmUpdatedAt = 'updatedAt';
+  static const keyBgmComposer = 'composer';
+  static const keyBgmLicense = 'license';
+
 }
 
 /// Firebase Config関連の定数管理クラス

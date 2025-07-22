@@ -68,9 +68,14 @@ class FRDnaming {
 
   //削除された投稿
   static const String subDeleteingLog = 'deleting_log'; //削除された投稿
-  static const String keyDeletedAt = 'deleted_at'; //削除日時 
+  static const String keyDeletedAt = 'deleted_at'; //削除日時
   static const String keyDeletedDocId = 'deleted_doc_id'; //削除された投稿のドキュメントID
   static const String keyDeletedType = 'deleted_type'; //削除された投稿のタイプ
   static const String keyDeletedBy = 'deleted_by'; //削除した
 
+  // BGM関連（Realtime Database）
+  static const keyBgmTitle = 'title';
+  static const keyBgmTags = 'tags';
+  static const keyBgmThumbnailUrl = 'thumbnailUrl';
+  static const keyBgmIsActive = 'isActive';
 }
