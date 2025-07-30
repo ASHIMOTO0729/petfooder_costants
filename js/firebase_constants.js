@@ -81,6 +81,8 @@ const FirebaseRealtime = {
     keyDeletedDocId: 'deleted_doc_id', //削除された投稿のドキュメントID
     keyDeletedType: 'deleted_type', //削除された投稿のタイプ
     keyDeletedBy: 'deleted_by', //削除した人
+    keyDeletedSubDocId: 'deleted_sub_doc_id', //削除された投稿のサブドキュメントID
+    keyDeletedFieldKey: 'deleted_field_key', //削除されたフィールドキー
    
 };
 
