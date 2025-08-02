@@ -179,6 +179,9 @@ class FDBnaming {
   ///もぐ管理履歴 9桁のIDを生成する
   static const keyHealthRecordId = 'id';
 
+  ///もぐ管理のdocID
+  static const keyHealthRecordDocId = 'doc_id';
+
   ///もぐ管理のデータ種類 体重|病院|美容院|食事|商品|その他
   static const keyHealthRecordType = 'type';
 
