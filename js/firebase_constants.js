@@ -151,7 +151,8 @@ const FirebaseConstants = {
         report: 'report',
         invalidLog: 'invalid_log',
         postCommentList: 'comment_list',
-        previewList: 'preview_list'
+        previewList: 'preview_list',
+        healthRecord: 'health_record',
     },
 
     // 通知関連キー - 最重要: Dart版と完全一致必須

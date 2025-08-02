@@ -43,6 +43,7 @@ class FDBnaming {
   static const subCollectionInvalidLog = 'invalid_log';
   static const subCollectionPostCommentList = 'comment_list';
   static const subCollectionPreviewList = 'preview_list';
+  static const subCollectionHealthRecord = 'health_record';
 
   // サブサブコレクション
   static const subSubCollectionProductReviewLikeList = 'product_review_like_list';
