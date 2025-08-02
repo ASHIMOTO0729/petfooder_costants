@@ -205,6 +205,12 @@ class FDBnaming {
   ///もぐ管理のタグ
   static const keyHealthRecordTags = 'tags';
 
+  ///もぐ管理のペットID
+  static const keyHealthRecordPetDocId = 'pet_doc_id';
+
+  ///もぐ管理のユーザーID
+  static const keyHealthRecordUserUid = 'uid';
+
   ///もぐ管理のメタデータ
   static const keyHealthRecordMetadata = 'metadata';
 
@@ -222,6 +228,12 @@ class FDBnaming {
 
   ///もぐ管理のリマインダー日時 リマインダー有効の場合のみ
   static const keyHealthRecordReminderDate = 'reminder_date';
+
+  ///もぐ管理の位置情報 緯度
+  static const keyHealthRecordLocationLat = 'location_lat';
+
+  ///もぐ管理の位置情報 経度
+  static const keyHealthRecordLocationLng = 'location_lng';
 
   ///もぐ管理の作成日時
   static const keyHealthRecordCreatedAt = 'created_at';

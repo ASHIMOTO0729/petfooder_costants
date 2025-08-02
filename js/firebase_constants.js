@@ -387,6 +387,8 @@ const FirebaseConstants = {
         petDocId: 'pet_doc_id',
         type: 'type',
         title: 'title',
+        petDocId: 'pet_doc_id',
+        userUid: 'uid',
         date: 'date',
         weight: 'weight',
         cost: 'cost',
@@ -400,6 +402,8 @@ const FirebaseConstants = {
         nextVisitDate: 'next_visit_date',
         reminderDate: 'reminder_date',
         isReminder: 'is_reminder',
+        locationLat: 'location_lat',
+        locationLng: 'location_lng',
         createdAt: 'created_at',
         updatedAt: 'updated_at',
 
