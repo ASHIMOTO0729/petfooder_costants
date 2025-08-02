@@ -88,12 +88,15 @@ const FirebaseRealtime = {
     // もぐ管理
     //--------------------------------
     subHealthRecord: 'health_record',
+    keyHealthRecordTypeWeight: 'weight',
+    keyHealthRecordTypeMedical: 'medical',
+    keyHealthRecordTypeGrooming: 'grooming',
+    keyHealthRecordTypeFood: 'food',
+        keyHealthRecordTypeProduct: 'product',
+    keyHealthRecordTypeOther: 'other',
+    keyHealthRecordStoreDocId: 'store_doc_id',
     keyHealthRecordWeight: 'weight',
-    keyHealthRecordMedical: 'medical',
-    keyHealthRecordGrooming: 'grooming',
-    keyHealthRecordFood: 'food',
-    keyHealthRecordProduct: 'product',
-    keyHealthRecordOther: 'other',
+    keyHealthRecordCost: 'cost',
 
 };
 

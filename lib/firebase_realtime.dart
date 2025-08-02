@@ -81,11 +81,14 @@ class FRDnaming {
 
   // もぐ管理
   static const String subHealthRecord = 'health_record';
+  static const String keyHealthRecordTypeWeight = 'weight';
+  static const String keyHealthRecordTypeMedical = 'medical';
+  static const String keyHealthRecordTypeGrooming = 'grooming';
+  static const String keyHealthRecordTypeFood = 'food';
+  static const String keyHealthRecordTypeProduct = 'product';
+  static const String keyHealthRecordTypeOther = 'other';
   static const String keyHealthRecordWeight = 'weight';
-  static const String keyHealthRecordMedical = 'medical';
-  static const String keyHealthRecordGrooming = 'grooming';
-  static const String keyHealthRecordFood = 'food';
-  static const String keyHealthRecordProduct = 'product';
-  static const String keyHealthRecordOther = 'other';
-
+  static const String keyHealthRecordCost = 'cost';
+  static const String keyHealthRecordStoreDocId = 'store_doc_id';
+  
 }
