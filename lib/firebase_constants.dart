@@ -175,6 +175,60 @@ class FDBnaming {
   static const keyNotificationPostCommentContent = 'post_comment_content';
   static const keyNotificationPostCommentReplyTo = 'post_comment_reply_to';
 
+  ///もぐ管理履歴 9桁のIDを生成する
+  static const keyHealthRecordId = 'id';
+
+  ///もぐ管理のデータ種類 体重|病院|美容院|食事|商品|その他
+  static const keyHealthRecordType = 'type';
+
+  ///もぐ管理のタイトル
+  static const keyHealthRecordTitle = 'title';
+
+  ///もぐ管理の日付
+  static const keyHealthRecordDate = 'date';
+
+  ///もぐ管理の体重(kg)
+  static const keyHealthRecordWeight = 'weight';
+
+  ///もぐ管理のコスト(円)
+  static const keyHealthRecordCost = 'cost';
+
+  ///もぐ管理の施設名(病院|美容院)
+  static const keyHealthRecordFacilityName = 'facility_name';
+
+  ///もぐ管理のメモ
+  static const keyHealthRecordMemo = 'memo';
+
+  ///もぐ管理の画像URL
+  static const keyHealthRecordImageUrls = 'image_urls';
+
+  ///もぐ管理のタグ
+  static const keyHealthRecordTags = 'tags';
+
+  ///もぐ管理のメタデータ
+  static const keyHealthRecordMetadata = 'metadata';
+
+  ///もぐ管理の位置情報
+  static const keyHealthRecordLocation = 'location';
+
+  ///もぐ管理の医師名
+  static const keyHealthRecordDoctorName = 'doctor_name';
+
+  ///もぐ管理の次回訪問日
+  static const keyHealthRecordNextVisitDate = 'next_visit_date';
+
+  ///もぐ管理のリマインダー trueならリマインダー有効 falseならリマインダー無効
+  static const keyHealthRecordIsReminder = 'is_reminder';
+
+  ///もぐ管理のリマインダー日時 リマインダー有効の場合のみ
+  static const keyHealthRecordReminderDate = 'reminder_date';
+
+  ///もぐ管理の作成日時
+  static const keyHealthRecordCreatedAt = 'created_at';
+
+  ///もぐ管理の更新日時
+  static const keyHealthRecordUpdatedAt = 'updated_at';
+
   // カテゴリーリスト
   static const keyCategoryCategories = 'categories';
   static const keyCategoryCatFoodBrand = 'catFoodBrand';
@@ -297,7 +351,7 @@ class FDBnaming {
 
   // メタデータ
   static const keyMetadata = 'metadata';
-  
+
   // BGM関連（Firestore）
   static const keyBgmId = 'id';
   static const keyBgmStorageUrl = 'storageURL';
@@ -305,11 +359,10 @@ class FDBnaming {
   static const keyBgmDescription = 'description';
   static const keyBgmFileSize = 'fileSize';
   static const keyBgmMimeType = 'mimeType';
-  static const keyBgmCreatedAt = 'createdAt';
-  static const keyBgmUpdatedAt = 'updatedAt';
+  static const keyBgmCreatedAt = 'created_at';
+  static const keyBgmUpdatedAt = 'updated_at';
   static const keyBgmComposer = 'composer';
   static const keyBgmLicense = 'license';
-
 }
 
 /// Firebase Config関連の定数管理クラス

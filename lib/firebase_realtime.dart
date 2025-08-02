@@ -78,4 +78,14 @@ class FRDnaming {
   static const keyBgmTags = 'tags';
   static const keyBgmThumbnailUrl = 'thumbnailUrl';
   static const keyBgmIsActive = 'isActive';
+
+  // もぐ管理
+  static const String subHealthRecord = 'health_record';
+  static const String keyHealthRecordWeight = 'weight';
+  static const String keyHealthRecordMedical = 'medical';
+  static const String keyHealthRecordGrooming = 'grooming';
+  static const String keyHealthRecordFood = 'food';
+  static const String keyHealthRecordProduct = 'product';
+  static const String keyHealthRecordOther = 'other';
+
 }

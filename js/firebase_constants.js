@@ -76,14 +76,25 @@ const FirebaseRealtime = {
 
     //--------------------------------
     //削除内容
-    subDeletingLog : 'deleting_log', //削除された投稿
+    subDeletingLog: 'deleting_log', //削除された投稿
     keyDeletedAt: 'deleted_at', //削除日時
     keyDeletedDocId: 'deleted_doc_id', //削除された投稿のドキュメントID
     keyDeletedType: 'deleted_type', //削除された投稿のタイプ
     keyDeletedBy: 'deleted_by', //削除した人
     keyDeletedSubDocId: 'deleted_sub_doc_id', //削除された投稿のサブドキュメントID
     keyDeletedFieldKey: 'deleted_field_key', //削除されたフィールドキー
-   
+
+    //--------------------------------
+    // もぐ管理
+    //--------------------------------
+    subHealthRecord: 'health_record',
+    keyHealthRecordWeight: 'weight',
+    keyHealthRecordMedical: 'medical',
+    keyHealthRecordGrooming: 'grooming',
+    keyHealthRecordFood: 'food',
+    keyHealthRecordProduct: 'product',
+    keyHealthRecordOther: 'other',
+
 };
 
 const FirebaseConstants = {
@@ -366,7 +377,35 @@ const FirebaseConstants = {
         displayFlag: 'display_flag',
         metadata: 'metadata',
         ttl: 'ttl'
+    },
+
+    //--------------------------------
+    // もぐ管理
+    //--------------------------------
+    healthRecord: {
+        id: 'id',
+        petDocId: 'pet_doc_id',
+        type: 'type',
+        title: 'title',
+        date: 'date',
+        weight: 'weight',
+        cost: 'cost',
+        facilityName: 'facility_name',
+        memo: 'memo',
+        imageUrls: 'image_urls',
+        tags: 'tags',
+        metadata: 'metadata',
+        location: 'location',
+        doctorName: 'doctor_name',
+        nextVisitDate: 'next_visit_date',
+        reminderDate: 'reminder_date',
+        isReminder: 'is_reminder',
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+
+
     }
+
 
 };
 
@@ -379,6 +418,8 @@ const StorageConstants = {
     fileProductReview: 'product_review',
     fileNotificationApp: 'notification_app',
     fileNotificationDBApp: 'db_notification_app',
+    fileHealthRecordDB: 'db_health_record',
+    fileHealthRecord: 'health_record',
 }
 
 // Firebase Functions用の定数
