@@ -411,7 +411,7 @@ const FirebaseConstants = {
         locationLng: 'location_lng',
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-
+        isPublic: 'is_public',
 
     }
 

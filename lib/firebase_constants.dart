@@ -176,6 +176,9 @@ class FDBnaming {
   static const keyNotificationPostCommentContent = 'post_comment_content';
   static const keyNotificationPostCommentReplyTo = 'post_comment_reply_to';
 
+  // もぐ公開設定
+  static const keyHealthRecordIsPublic = 'is_public';
+
   ///もぐ管理履歴 9桁のIDを生成する
   static const keyHealthRecordId = 'id';
 
