@@ -131,6 +131,7 @@ const FirebaseConstants = {
         reviewList: 'product_review_list',
         postCommentList: 'comment_list',
         productReviewLikeList: 'product_review_like_list',
+        healthRecord: 'health_record',
     },
 
     // Algolia
