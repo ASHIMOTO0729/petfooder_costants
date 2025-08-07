@@ -54,6 +54,7 @@ const FirebaseRealtime = {
     keyUserSimpleName: 'user_display_name', //表示名
     keyUserSimpleProfileImage: 'user_profile_image', //プロフィール画像
     keyUserSimpleBio: 'user_bio', //自己紹介
+    keyUserSimpleIsHealthPublic: 'user_health_public', //公開設定
     //----
     //通知の許可
     subUserNotification: 'user_notification',
@@ -411,7 +412,6 @@ const FirebaseConstants = {
         locationLng: 'location_lng',
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-        isPublic: 'is_public',
 
     }
 

@@ -45,6 +45,7 @@ class FRDnaming {
   static const String keyUserSimpleName = 'user_display_name'; //表示名
   static const String keyUserSimpleProfileImage = 'user_profile_image'; //プロフィール画像
   static const String keyUserSimpleBio = 'user_bio'; //自己紹介
+  static const String keyUserSimpleIsHealthPublic = 'user_health_public'; //公開設定
 
   //----
   //通知の許可
