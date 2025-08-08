@@ -16,11 +16,23 @@ enum UploadStatus {
 class FSnaming {
   String flavor = getCollectionPrefix();
 
+
   //ファイル名
+  @Deprecated('ペットのファイル名はuser内のサブフォルダに移動')
   String get fileMyPet => '${flavor}my_pet';
+  @Deprecated('ポストのファイル名はuser内のサブフォルダに移動')
   String get filePost => '${flavor}post';
+  
   String get fileUser => '${flavor}user';
+  @Deprecated('ヘルスレコードのファイル名はuser内のサブフォルダに移動')
   String get fileHealthRecord => '${flavor}health_record';
+
+  //サブフォルダ
+  String get subFolderUser => 'profile';
+  String get subFolderPost => 'post';
+  String get subFolderHealthRecord => 'health_record';
+  String get subFolderPet => 'pet';
+
 
   //ポスト
   String get filePostVideo => 'post_video';
