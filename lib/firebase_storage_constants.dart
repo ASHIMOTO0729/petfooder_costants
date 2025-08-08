@@ -32,6 +32,7 @@ class FSnaming {
   String get subFolderPost => 'post';
   String get subFolderHealthRecord => 'health_record';
   String get subFolderPet => 'pet';
+  String get subFolderReview => 'review';
 
 
   //ポスト
