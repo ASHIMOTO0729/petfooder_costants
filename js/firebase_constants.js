@@ -430,6 +430,11 @@ const StorageConstants = {
     fileNotificationDBApp: 'db_notification_app',
     fileHealthRecordDB: 'db_health_record',
     fileHealthRecord: 'health_record',
+    subFolderUser: 'profile',
+    subFolderPost: 'post',
+    subFolderHealthRecord: 'health_record',
+    subFolderPet: 'pet',
+
 }
 
 // Firebase Functions用の定数
