@@ -59,4 +59,6 @@ class FSnaming {
   static const keyMetaProductDocId = 'product_doc_id'; //商品ID
   static const keyMetaPetDocId = 'pet_doc_id'; //ペットID
   static const keyMetaPostPreviewKey = 'post_preview_key'; //投稿プレビューID
+    static const keyMetaHealthRecordDocId = 'health_record_doc_id'; //健康記録ID
+  static const keyMetaHealthRecordField = 'health_record_field'; //健康記録フィールド
 }

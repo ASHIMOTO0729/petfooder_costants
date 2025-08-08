@@ -93,7 +93,7 @@ const FirebaseRealtime = {
     keyHealthRecordTypeMedical: 'medical',
     keyHealthRecordTypeGrooming: 'grooming',
     keyHealthRecordTypeFood: 'food',
-        keyHealthRecordTypeProduct: 'product',
+    keyHealthRecordTypeProduct: 'product',
     keyHealthRecordTypeOther: 'other',
     keyHealthRecordStoreDocId: 'store_doc_id',
     keyHealthRecordWeight: 'weight',
@@ -434,6 +434,22 @@ const StorageConstants = {
     subFolderPost: 'post',
     subFolderHealthRecord: 'health_record',
     subFolderPet: 'pet',
+
+
+
+    // メタデータ
+    metaUserUid: 'user_uid', //ユーザーID
+    metaImageType: 'image/webp', //画像のタイプ
+    metaVideoType: 'video/mp4', //動画のタイプ
+    metaCacheControlValue: 'public, max-age=2592000,immutable', //30日間キャッシュ　投稿で使用
+    metaPostDocId: 'post_doc_id', //投稿ID
+    metaReviewDocId: 'review_doc_id', //レビューID
+    metaProductDocId: 'product_doc_id', //商品ID
+    metaPetDocId: 'pet_doc_id', //ペットID
+    metaPostPreviewKey: 'post_preview_key', //投稿プレビューID
+    metaHealthRecordDocId: 'health_record_doc_id', //健康記録ID
+    metaHealthRecordField: 'health_record_field', //健康記録フィールド
+
 
 }
 
