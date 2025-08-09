@@ -141,6 +141,7 @@ const FirebaseConstants = {
         resourceMap: 'resource_map'
     },
 
+
     // サブコレクション
     subCollections: {
         productReviewList: 'product_review_list',
@@ -155,6 +156,8 @@ const FirebaseConstants = {
         postCommentList: 'comment_list',
         previewList: 'preview_list',
         healthRecord: 'health_record',
+        followList: 'follow_list',
+        followerList: 'follower_list',
     },
 
     // 通知関連キー - 最重要: Dart版と完全一致必須
