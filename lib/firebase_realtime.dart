@@ -58,6 +58,7 @@ class FRDnaming {
   static const String keyUserNotificationTopicPostComment = 'user_notification_post_comment';
   static const String keyUserNotificationTopicApp = 'user_notification_app';
   static const String keyUserNotificationTopicAppDebug = 'user_notification_app_debug';
+  static const String keyUserNotificationTopicFollow = 'user_notification_follow';
   //----
   //チケット
   static const String subUserTicketLog = 'user_ticket_log';

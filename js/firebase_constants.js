@@ -66,6 +66,7 @@ const FirebaseRealtime = {
     keyUserNotificationTopicPostComment: 'user_notification_post_comment',
     keyUserNotificationTopicApp: 'user_notification_app',
     keyUserNotificationTopicAppDebug: 'user_notification_app_debug',
+    keyUserNotificationTopicFollow: 'user_notification_follow',
     //----
     //チケット
     subUserTicketLog: 'user_ticket_log',
