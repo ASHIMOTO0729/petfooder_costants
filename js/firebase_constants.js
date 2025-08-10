@@ -121,6 +121,7 @@ const FirebaseConstants = {
         notificationApp: 'notification_app',
         notificationAppDebug: 'db_notification_app',
         report: 'report',
+
     },
 
     subCollections: {
@@ -422,6 +423,10 @@ const FirebaseConstants = {
         createdAt: 'created_at',
         updatedAt: 'updated_at',
 
+    },
+
+    followList: {
+        targetDocId: 'target_doc_id',
     }
 
 

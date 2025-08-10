@@ -386,6 +386,9 @@ class FDBnaming {
   static const keyBgmUpdatedAt = 'updated_at';
   static const keyBgmComposer = 'composer';
   static const keyBgmLicense = 'license';
+
+  // フォロー関連
+  static const keyFollowListTargetDocId = 'target_doc_id';
 }
 
 /// Firebase Config関連の定数管理クラス
