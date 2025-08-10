@@ -39,6 +39,8 @@ class FRDnaming {
   static const String keyUserPostCounts = 'user_post_counts'; //投稿数
   static const String keyUserReviewCounts = 'user_review_counts'; //レビュー数
   static const String keyUserTicketCounts = 'user_ticket_counts'; //チケット枚数
+  static const String keyUserFollowCounts = 'user_follow_counts'; //フォロー数
+  static const String keyUserFollowerCounts = 'user_follower_counts'; //フォロワー数
 
   //簡易アカウント情報(名前とプロフィール画像)
   static const String subUserSimple = 'user_simple';
