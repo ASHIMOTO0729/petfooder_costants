@@ -196,6 +196,8 @@ const FirebaseConstants = {
         topicLikeReview: "user_notification_like_review", // いいねのトピック
         topicLikePost: "user_notification_like_post", // 投稿いいねのトピック
         topicLikePostComment: "user_notification_like_post_comment", // 投稿コメントいいねのトピック
+        topicFollow: "user_notification_follow", // フォローのトピック
+        
 
         topicPostComment: "user_notification_post_comment", // 投稿コメントのトピック
         topicApp: "user_notification_app", // 運営のトピック
