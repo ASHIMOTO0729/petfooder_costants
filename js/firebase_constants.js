@@ -48,7 +48,7 @@ const FirebaseRealtime = {
     keyUserPostCounts: 'user_post_counts', //投稿数
     keyUserReviewCounts: 'user_review_counts', //レビュー数
     keyUserTicketCounts: 'user_ticket_counts', //チケット枚数
-    keyUserFollowCounts: 'user_follow_counts', //フォロー数
+    keyUserFollowingCounts: 'user_following_counts', //フォロー数
     keyUserFollowerCounts: 'user_follower_counts', //フォロワー数
 
     //簡易アカウント情報(名前とプロフィール画像)
@@ -197,7 +197,7 @@ const FirebaseConstants = {
         topicLikePost: "user_notification_like_post", // 投稿いいねのトピック
         topicLikePostComment: "user_notification_like_post_comment", // 投稿コメントいいねのトピック
         topicFollow: "user_notification_follow", // フォローのトピック
-        
+
 
         topicPostComment: "user_notification_post_comment", // 投稿コメントのトピック
         topicApp: "user_notification_app", // 運営のトピック
