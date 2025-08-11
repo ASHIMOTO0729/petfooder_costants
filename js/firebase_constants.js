@@ -162,6 +162,7 @@ const FirebaseConstants = {
         healthRecord: 'health_record',
         followList: 'follow_list',
         followerList: 'follower_list',
+        blockList: 'block_list',
     },
 
     // 通知関連キー - 最重要: Dart版と完全一致必須

@@ -46,7 +46,7 @@ class FDBnaming {
   static const subCollectionHealthRecord = 'health_record';
   static const subCollectionFollowList = 'follow_list';
   static const subCollectionFollowerList = 'follower_list';
- // static const subCollectionFollowList = 'follow_list';
+  static const subCollectionBlockList = 'block_list';
   
 
   // サブサブコレクション
@@ -389,6 +389,10 @@ class FDBnaming {
 
   // フォロー関連
   static const keyFollowListTargetDocId = 'target_doc_id';
+
+
+
+
 }
 
 /// Firebase Config関連の定数管理クラス
