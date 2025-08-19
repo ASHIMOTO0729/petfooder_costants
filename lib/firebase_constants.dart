@@ -416,4 +416,12 @@ class FCnaming {
   static const keyPostAvailable = 'isPost_Available'; // 投稿可能か
   static const keySearchAvailable = 'isSearch_Available'; // 検索可能か
   static const keyAppInMaintenance = 'isApp_InMaintenance'; // アプリがメンテナンス中か
+  static const keyAndroidBannerID = 'android_banner_id';
+  static const keyIosBannerID = 'ios_banner_id';
+  static const keyAndroidInterstitialID = 'android_interstitial_id';
+  static const keyIosInterstitialID = 'ios_interstitial_id';
+  static const keyAndroidRewardedID = 'android_rewarded_id';
+  static const keyIosRewardedID = 'ios_rewarded_id';
+  static const keyAdDebugMode = 'ad_debug_mode';
 }
+ 
