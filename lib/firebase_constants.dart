@@ -258,6 +258,8 @@ class FDBnaming {
   ///もぐ管理の位置情報 経度
   static const keyHealthRecordLocationLng = 'location_lng';
 
+  ///モグ管理リンクURL
+  static const keyHealthRecordLinkURL = 'link_url';
 
   ///もぐ管理の作成日時
   static const keyHealthRecordCreatedAt = 'created_at';
