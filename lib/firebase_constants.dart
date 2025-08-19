@@ -201,6 +201,18 @@ class FDBnaming {
   ///もぐ管理の体重(kg)
   static const keyHealthRecordWeight = 'weight';
 
+  ///モグ管理のグラム(g)
+  static const keyHealthRecordGram = 'gram';
+
+  ///モグ管理のミリリットル(ml)
+  static const keyHealthRecordMilliliter = 'milliliter';
+
+  ///モグ管理のチェックボックス
+  static const keyHealthRecordCheckbox = 'checkbox';
+
+  ///モグ管理の整数
+  static const keyHealthRecordInteger = 'integer';
+
   ///もぐ管理のコスト(円)
   static const keyHealthRecordCost = 'cost';
 
@@ -245,6 +257,7 @@ class FDBnaming {
 
   ///もぐ管理の位置情報 経度
   static const keyHealthRecordLocationLng = 'location_lng';
+
 
   ///もぐ管理の作成日時
   static const keyHealthRecordCreatedAt = 'created_at';
