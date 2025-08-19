@@ -421,6 +421,12 @@ const FirebaseConstants = {
         isReminder: 'is_reminder',
         locationLat: 'location_lat',
         locationLng: 'location_lng',
+        isPublic: 'is_public',
+        gram: 'gram',
+        milliliter: 'milliliter',
+        checkbox: 'checkbox',
+        integer: 'integer',
+        linkURL: 'link_url',
         createdAt: 'created_at',
         updatedAt: 'updated_at',
 
