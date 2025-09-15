@@ -400,6 +400,7 @@ const FirebaseConstants = {
     //--------------------------------
     healthRecord: {
         id: 'id',
+        currency: 'currency',
         docId: 'doc_id',
         petDocId: 'pet_doc_id',
         type: 'type',

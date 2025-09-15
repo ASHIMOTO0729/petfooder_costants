@@ -47,7 +47,6 @@ class FDBnaming {
   static const subCollectionFollowList = 'follow_list';
   static const subCollectionFollowerList = 'follower_list';
   static const subCollectionBlockList = 'block_list';
-  
 
   // サブサブコレクション
   static const subSubCollectionProductReviewLikeList = 'product_review_like_list';
@@ -182,6 +181,9 @@ class FDBnaming {
 
   // もぐ公開設定
   static const keyHealthRecordIsPublic = 'is_public';
+
+  ///通貨
+  static const keyHealthRecordCurrency = 'currency';
 
   ///もぐ管理履歴 9桁のIDを生成する
   static const keyHealthRecordId = 'id';
@@ -387,6 +389,8 @@ class FDBnaming {
   static const keyCreatedAt = 'created_at';
   static const keyUpdatedAt = 'updated_at';
 
+
+
   // メタデータ
   static const keyMetadata = 'metadata';
 
@@ -404,10 +408,6 @@ class FDBnaming {
 
   // フォロー関連
   static const keyFollowListTargetDocId = 'target_doc_id';
-
-
-
-
 }
 
 /// Firebase Config関連の定数管理クラス
@@ -424,4 +424,3 @@ class FCnaming {
   static const keyIosRewardedID = 'ios_rewarded_id';
   static const keyAdDebugMode = 'ad_debug_mode';
 }
- 
