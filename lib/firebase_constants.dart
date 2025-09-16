@@ -271,6 +271,7 @@ class FDBnaming {
 
   // カテゴリーリスト
   static const keyCategoryCategories = 'categories';
+  static const keyCategoryCategoriesLocalize = 'categories_localize';
   static const keyCategoryCatFoodBrand = 'catFoodBrand';
   static const keyCategoryCatFoodBrandReverse = 'catFoodBrandReverse';
   static const keyCategoryCatFoodMaker = 'catFoodMaker';
