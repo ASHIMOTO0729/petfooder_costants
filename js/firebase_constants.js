@@ -60,6 +60,7 @@ const FirebaseRealtime = {
     //----
     //通知の許可
     subUserNotification: 'user_notification',
+    keyUserLocalize: 'user_localize',
     keyUserNotificationTopicLikeReview: 'user_notification_like_review',
     keyUserNotificationTopicLikePost: 'user_notification_like_post',
     keyUserNotificationTopicLikePostComment: 'user_notification_like_post_comment',

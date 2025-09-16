@@ -52,6 +52,7 @@ class FRDnaming {
   //----
   //通知の許可
   static const String subUserNotification = 'user_notification';
+  static const String keyUserLocalize = 'user_localize';
   static const String keyUserNotificationTopicLikeReview = 'user_notification_like_review';
   static const String keyUserNotificationTopicLikePost = 'user_notification_like_post';
   static const String keyUserNotificationTopicLikePostComment = 'user_notification_like_post_comment';
