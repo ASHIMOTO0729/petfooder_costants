@@ -102,7 +102,7 @@ const FirebaseRealtime = {
     keyHealthRecordStoreDocId: 'store_doc_id',
     keyHealthRecordWeight: 'weight',
     keyHealthRecordCost: 'cost',
-
+    keyHealthRecordHeight: 'height',
 };
 
 const FirebaseConstants = {

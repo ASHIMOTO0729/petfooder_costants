@@ -204,6 +204,9 @@ class FDBnaming {
   ///もぐ管理の体重(kg)
   static const keyHealthRecordWeight = 'weight';
 
+  ///もぐ管理の身長(cm)
+  static const keyHealthRecordHeight = 'height';
+
   ///モグ管理のグラム(g)
   static const keyHealthRecordGram = 'gram';
 
