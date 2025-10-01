@@ -47,6 +47,7 @@ class FDBnaming {
   static const subCollectionFollowList = 'follow_list';
   static const subCollectionFollowerList = 'follower_list';
   static const subCollectionBlockList = 'block_list';
+  static const subCollectionHealthJoined = 'health_joined'; //もぐ管理参加情報
 
   // サブサブコレクション
   static const subSubCollectionProductReviewLikeList = 'product_review_like_list';
@@ -224,6 +225,10 @@ class FDBnaming {
   ///もぐ管理のメモ
   static const keyHealthRecordMemo = 'memo';
 
+  ///もぐ管理のメニュー
+  static const keyHealthRecordMenu = 'menu';
+
+
   ///もぐ管理の画像URL
   static const keyHealthRecordImageUrls = 'image_urls';
 
@@ -303,6 +308,7 @@ class FDBnaming {
   // ユーザー情報
   static const keyUserUid = 'uid';
   static const keyUserId = 'user_id';
+
   static const keyUserList = 'user_list';
   static const keyUserPostPreviewList = 'user_post_preview_list';
   static const keyUserReviewPreviewList = 'user_review_preview_list';
@@ -357,6 +363,14 @@ class FDBnaming {
   // 追加/更新日時
   static const keyCreatedAt = 'created_at';
   static const keyUpdatedAt = 'updated_at';
+
+  // HealthRecord関連
+  static const keyHealthJoinedUserUid = 'joined_user_uid'; //自分の部屋に参加しているユーザーUID
+  static const keyHealthJoinedAt = 'joined_at'; //参加日時
+  static const keyHealthJoinedList = 'joined_list';  //自分が参加しているもぐ管理
+
+
+
 
 
 

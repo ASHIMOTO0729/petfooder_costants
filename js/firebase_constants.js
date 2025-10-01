@@ -137,6 +137,7 @@ const FirebaseConstants = {
         postCommentList: 'comment_list',
         productReviewLikeList: 'product_review_like_list',
         healthRecord: 'health_record',
+        healthJoined: 'health_joined',
     },
 
     // Algolia
@@ -367,6 +368,12 @@ const FirebaseConstants = {
         commentUpdatedAt: "updated_at", // コメント更新日時
     },
 
+    healthJoined: {
+        joinedUserUid: 'joined_user_uid', // 自分の部屋に参加しているユーザーUID
+        joinedAt: 'joined_at', // 参加日時
+        joinedList: 'joined_list', // 自分が参加しているもぐ管理
+    },
+
 
     // ユーザー情報
     // ユーザー情報
@@ -429,6 +436,7 @@ const FirebaseConstants = {
         checkbox: 'checkbox',
         integer: 'integer',
         linkURL: 'link_url',
+        menu: 'menu',
         createdAt: 'created_at',
         updatedAt: 'updated_at',
 
