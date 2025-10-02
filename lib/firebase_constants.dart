@@ -370,7 +370,7 @@ class FDBnaming {
   // HealthRecord関連
   static const keyHealthJoinedUserList = 'joined_user_list '; //自分の部屋に参加しているユーザーUID
   static const keyHealthJoinedAt = 'joined_at'; //参加日時
-  static const keyHealthJoinedList = 'joined_list';  //自分が参加しているもぐ管理
+  static const keyHealthJoinedGroup = 'joined_group';  //自分が参加しているもぐ管理
   static const keyHealthInvitationCode = 'invitation_code'; //招待状のコード
   static const keyHealthExpirationDate = 'expiration_date'; //期限
 
