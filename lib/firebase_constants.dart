@@ -47,7 +47,7 @@ class FDBnaming {
   static const subCollectionFollowList = 'follow_list';
   static const subCollectionFollowerList = 'follower_list';
   static const subCollectionBlockList = 'block_list';
-  static const subCollectionHealthJoined = 'health_joined'; //もぐ管理参加情報
+  static const subCollectionHealthGroup = 'health_group'; //もぐ管理参加情報
 
   // サブサブコレクション
   static const subSubCollectionProductReviewLikeList = 'product_review_like_list';
@@ -368,10 +368,11 @@ class FDBnaming {
   static const keyUpdatedAt = 'updated_at';
 
   // HealthRecord関連
-  static const keyHealthJoinedUserUid = 'joined_user_uid'; //自分の部屋に参加しているユーザーUID
+  static const keyHealthJoinedUserList = 'joined_user_list '; //自分の部屋に参加しているユーザーUID
   static const keyHealthJoinedAt = 'joined_at'; //参加日時
   static const keyHealthJoinedList = 'joined_list';  //自分が参加しているもぐ管理
-
+  static const keyHealthInvitationCode = 'invitation_code'; //招待状のコード
+  static const keyHealthExpirationDate = 'expiration_date'; //期限
 
 
 

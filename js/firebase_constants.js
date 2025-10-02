@@ -137,7 +137,8 @@ const FirebaseConstants = {
         postCommentList: 'comment_list',
         productReviewLikeList: 'product_review_like_list',
         healthRecord: 'health_record',
-        healthJoined: 'health_joined',
+        healthGroup: 'health_group',
+        
     },
 
     // Algolia
@@ -165,6 +166,7 @@ const FirebaseConstants = {
         followList: 'follow_list',
         followerList: 'follower_list',
         blockList: 'block_list',
+        healthGroup: 'health_group',
     },
 
     // 通知関連キー - 最重要: Dart版と完全一致必須
@@ -368,10 +370,13 @@ const FirebaseConstants = {
         commentUpdatedAt: "updated_at", // コメント更新日時
     },
 
-    healthJoined: {
-        joinedUserUid: 'joined_user_uid', // 自分の部屋に参加しているユーザーUID
+    healthGroup: {
+        joinedUserList: 'joined_user_list', // 自分の部屋に参加しているユーザーUID
         joinedAt: 'joined_at', // 参加日時
-        joinedList: 'joined_list', // 自分が参加しているもぐ管理
+        joinedGroup: 'joined_group', // 自分が参加しているもぐ管理
+        //招待状のキー
+        invitationCode: 'invitation_code', // 招待状のコード
+        expirationDate: 'expiration_date', // 期限
     },
 
 
