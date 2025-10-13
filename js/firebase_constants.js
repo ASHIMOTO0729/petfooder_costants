@@ -68,6 +68,7 @@ const FirebaseRealtime = {
     keyUserNotificationTopicApp: 'user_notification_app',
     keyUserNotificationTopicAppDebug: 'user_notification_app_debug',
     keyUserNotificationTopicFollow: 'user_notification_follow',
+    keyUserNotificationTopicHealth: 'user_notification_health',
     //----
     //チケット
     subUserTicketLog: 'user_ticket_log',
@@ -138,7 +139,7 @@ const FirebaseConstants = {
         productReviewLikeList: 'product_review_like_list',
         healthRecord: 'health_record',
         healthGroup: 'health_group',
-        
+
     },
 
     // Algolia
@@ -203,6 +204,7 @@ const FirebaseConstants = {
         topicLikePost: "user_notification_like_post", // 投稿いいねのトピック
         topicLikePostComment: "user_notification_like_post_comment", // 投稿コメントいいねのトピック
         topicFollow: "user_notification_follow", // フォローのトピック
+        topicHealth: "user_notification_health", // もぐ管理のトピック
 
 
         topicPostComment: "user_notification_post_comment", // 投稿コメントのトピック
@@ -215,6 +217,8 @@ const FirebaseConstants = {
         likePost: "user_notification_like_post", // 投稿いいねのトピック
         likePostComment: "user_notification_like_post_comment", // 投稿コメントいいねのトピック
 
+
+        health: "user_notification_health", // もぐ管理のトピック
         postComment: "user_notification_post_comment", // 投稿コメントのトピック
         app: "user_notification_app", // 運営のトピック
         userUID: "user_uid", // 運営通知ドキュメントID
