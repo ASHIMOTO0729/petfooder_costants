@@ -274,6 +274,9 @@ class FDBnaming {
   ///もぐ管理の作成日時
   static const keyHealthRecordCreatedAt = 'created_at';
 
+  ///製作者
+  static const keyHealthRecordCreatedBy = 'created_by';
+
   ///もぐ管理の更新日時
   static const keyHealthRecordUpdatedAt = 'updated_at';
 

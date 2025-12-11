@@ -443,6 +443,7 @@ const FirebaseConstants = {
         gram: 'gram',
         milliliter: 'milliliter',
         checkbox: 'checkbox',
+        createdBy: 'created_by',
         integer: 'integer',
         linkURL: 'link_url',
         menu: 'menu',
@@ -469,6 +470,7 @@ const StorageConstants = {
     fileNotificationDBApp: 'db_notification_app',
     fileHealthRecordDB: 'db_health_record',
     fileHealthRecord: 'health_record',
+
     subFolderUser: 'profile',
     subFolderPost: 'post',
     subFolderHealthRecord: 'health_record',
